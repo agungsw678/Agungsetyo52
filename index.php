@@ -67,7 +67,7 @@ $result = $kon->query("SELECT * FROM todo ORDER BY id_todo DESC");
           ?>
             <tr class="border-b hover:bg-gray-50">
               <td class="py-2 px-3"><?php echo $no; ?></td>
-              <td class="py-2 px-3 text-left"><?php echo htmlspecialchars($row['task']); ?></td>
+              <td class="py-2 px-3 text-left font-bold"><?php echo htmlspecialchars($row['task']); ?></td>
               <td class="py-2 px-3">
                 <?php if($row['status'] == 'selesai'): ?>
                   <span class="px-2 py-1 bg-green-200 text-green-800 rounded-full text-xs">Selesai</span>
